@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="title">DAVID PAYSDEN</h1>
+
+    <h1 class="header">Video Editor - Motion Designer</h1>
+
+    <div class="grid">
+
+        <div class="item" data-video="https://player.vimeo.com/video/1175577846">
+            <video src="videos/WORKPREV.mp4" muted autoplay loop playsinline preload="auto"></video>
+        </div>
+
+        <div class="item" data-video="https://player.vimeo.com/video/1175577846">
+            <video src="videos/AFTERTYLERPREV.mp4" muted autoplay loop playsinline preload="auto"></video>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <iframe id="player"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
