@@ -31,7 +31,11 @@ body {
 
 .item video {
     width: 100%;
+    height: auto;
+    display: block;
     cursor: pointer;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     /*border: 2px solid red;*/
 }
 
