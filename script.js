@@ -94,15 +94,16 @@ const projects = [
   }
 ];
 
-// 👇 SORT HERE from smaller to bigger
+// 🔥 SORT PROJECTS
 projects.sort((a, b) => a.order - b.order);
 
-// build the grid
+// 🎬 BUILD GRID
 projects.forEach(project => {
   const item = document.createElement("div");
   item.classList.add("item");
 
-  item.dataset.tags = project.tags.join(" "); // 👈 store tags
+  // store tags
+  item.dataset.tags = project.tags.join(" ");
 
   const video = document.createElement("video");
   video.src = project.preview;
@@ -111,24 +112,26 @@ projects.forEach(project => {
   video.autoplay = true;
   video.playsInline = true;
 
-  video.play();
+  video.play().catch(() => {});
 
   item.appendChild(video);
   grid.appendChild(item);
 
-  items.push(item); // 👈 store reference
+  items.push(item);
 
-  // click → open Vimeo
+  // 🎥 OPEN MODAL
   item.addEventListener("click", () => {
     player.src = project.vimeo + "?autoplay=1";
     modal.style.display = "flex";
   });
 });
 
+// 🎛️ FILTER SYSTEM
 document.querySelectorAll(".filters button").forEach(button => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
 
+    // 👤 ABOUT MODE
     if (filter === "about") {
       items.forEach(item => {
         item.style.opacity = "0";
@@ -139,31 +142,24 @@ document.querySelectorAll(".filters button").forEach(button => {
       return;
     }
 
+    // 🎬 NORMAL FILTER MODE
+    aboutSection.classList.remove("active");
+
     items.forEach(item => {
-      if (filter === "all") {
+      const tags = item.dataset.tags;
+
+      if (filter === "all" || tags.includes(filter)) {
         item.style.opacity = "1";
         item.style.pointerEvents = "auto";
       } else {
-        const tags = item.dataset.tags;
-
-        if (tags.includes(filter)) {
-          item.style.opacity = "1";
-          item.style.pointerEvents = "auto";
-        } else {
-          item.style.opacity = "0";
-          item.style.pointerEvents = "none";
-        }
+        item.style.opacity = "0";
+        item.style.pointerEvents = "none";
       }
     });
-
-    aboutSection.classList.remove("active");
   });
 });
 
-item.style.opacity = "0";
-item.style.pointerEvents = "none";
-
-// close modal
+// ❌ CLOSE MODAL
 close.addEventListener("click", () => {
   modal.style.display = "none";
   player.src = "";
