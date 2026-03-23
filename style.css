@@ -79,6 +79,11 @@ button:focus-visible {
     transition: opacity 0.3s ease;
 }
 
+.item.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .item video {
     width: 100%;
     height: auto;
