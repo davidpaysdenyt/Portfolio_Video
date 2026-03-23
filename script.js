@@ -11,7 +11,7 @@ const projects = [
     order: 1
   },
   {
-    preview: "/my-portfolio/videos/WORKPREV.mp4",
+    preview: "/my-portfolio/videos/AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     order: 2
   }
