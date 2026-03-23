@@ -142,14 +142,26 @@ document.querySelectorAll(".filters button").forEach(button => {
     aboutSection.classList.remove("active");
 
     // 🎬 FILTER ITEMS
-    items.forEach(item => {
-      const tags = item.dataset.tags;
+   items.forEach(item => {
+  const tags = item.dataset.tags;
 
-      if (filter === "all" || tags.includes(filter)) {
-        item.classList.remove("hidden");
-      } else {
-        item.classList.add("hidden");
-      }
+  if (filter === "all" || tags.includes(filter)) {
+    item.style.display = "block";
+
+    // fade in after being shown
+    setTimeout(() => {
+      item.classList.remove("fade-out");
+    }, 10);
+
+  } else {
+    // fade out first
+    item.classList.add("fade-out");
+
+    // THEN remove from layout
+    setTimeout(() => {
+      item.style.display = "none";
+    }, 300);
+  }
     });
   });
 });
