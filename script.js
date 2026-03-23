@@ -16,25 +16,25 @@ const projects = [
   },
   {
     preview: "videos/AFTERTYLERPREV.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/dNjrgmiblsg?si=WNT1djoL2zeWPyom",
     tags: ["Music-video"],
     order: 6
   },
   {
     preview: "videos/NEWSEN.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/IsUeL8t_RK0?si=yui-RqgPSjVFJ5Rt",
     tags: ["Music-video"],
     order: 3
   },
   {
     preview: "videos/VOLMAG.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/b2mbeBbVEmk?si=4tYZd47A76Rp1jYS",
     tags: ["Sport"],
     order: 4
   },
   {
     preview: "videos/OLSEN.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/cFAtHOUG0tc?si=s1RhJQ5-N7YaAwpY",
     tags: ["Sport"],
     order: 5
   },
@@ -46,25 +46,25 @@ const projects = [
   },
   {
     preview: "videos/EPSTADIO.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/65rFOtDd_58?si=73oNV7ACBPrIYufY",
     tags: ["Documentary"],
     order: 7
   },
   {
     preview: "videos/QSA.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/B_AnCQrNWEU?si=VK0exjLnVF18engs",
     tags: ["Sport"],
     order: 8
   },
   {
     preview: "videos/VILLAIGEA.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://www.youtube.com/embed/05XQRsQS7V0?si=jMtQM1OUxP6kn8-8",
     tags: ["Documentary"],
     order: 9
   },
   {
     preview: "videos/INTERLUDE.mp4",
-    vimeo: "https://player.vimeo.com/video/987654321",
+    vimeo: "https://player.vimeo.com/video/1176353305",
     tags: ["Music-video"],
     order: 10
   },
