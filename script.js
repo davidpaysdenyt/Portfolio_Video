@@ -1,14 +1,9 @@
-const items = document.querySelectorAll(".item");
 const modal = document.getElementById("modal");
 const player = document.getElementById("player");
 const close = document.getElementById("close");
+const grid = document.querySelector(".grid");
 
-items.forEach(item => {
-    const video = item.querySelector("videos");
-
-    // hover = play preview
-    // item.addEventListener("mouseenter", () => video.play());
-    // item.addEventListener("mouseleave", () => video.pause());
+// your data
 const projects = [
   {
     preview: "videos/WORKPREV.mp4",
@@ -20,38 +15,30 @@ const projects = [
   }
 ];
 
-const grid = document.querySelector(".grid");
-
+// build the grid
 projects.forEach(project => {
   const item = document.createElement("div");
   item.classList.add("item");
-  item.setAttribute("data-video", project.vimeo);
 
-  const video = document.createElement("videos");
+  const video = document.createElement("video");
   video.src = project.preview;
   video.muted = true;
   video.loop = true;
+  video.autoplay = true;
+  video.playsInline = true;
 
   item.appendChild(video);
   grid.appendChild(item);
 
-  // click
+  // click → open Vimeo
   item.addEventListener("click", () => {
     player.src = project.vimeo + "?autoplay=1";
     modal.style.display = "flex";
   });
 });
-    
-    // click = open Vimeo
-    item.addEventListener("click", () => {
-        const vimeoURL = item.getAttribute("data-video");
-        player.src = vimeoURL + "?autoplay=1";
-        modal.style.display = "flex";
-    });
-});
 
 // close modal
 close.addEventListener("click", () => {
-    modal.style.display = "none";
-    player.src = "";
+  modal.style.display = "none";
+  player.src = "";
 });
