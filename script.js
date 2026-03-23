@@ -27,7 +27,7 @@ projects.forEach(project => {
   item.classList.add("item");
   item.setAttribute("data-video", project.vimeo);
 
-  const video = document.createElement("video");
+  const video = document.createElement("videos");
   video.src = project.preview;
   video.muted = true;
   video.loop = true;
