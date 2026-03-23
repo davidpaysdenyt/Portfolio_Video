@@ -41,6 +41,7 @@ body {
 .about-content {
   max-width: 500px;        /* controls line width */
   text-align: left;        /* text stays left-aligned */
+  margin: 0 auto 20px;
 }
 
 .about.active {
