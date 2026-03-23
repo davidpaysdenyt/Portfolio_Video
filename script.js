@@ -8,12 +8,12 @@ const projects = [
   {
     preview: "/my-portfolio/videos/WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/123456789",
-    order: 1
+    order: 2
   },
   {
     preview: "/my-portfolio/videos/AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
-    order: 2
+    order: 1
   }
 ];
 
