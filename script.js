@@ -144,6 +144,9 @@ document.querySelectorAll(".filters button").forEach(button => {
   });
 });
 
+item.style.opacity = "0";
+item.style.pointerEvents = "none";
+
 // close modal
 close.addEventListener("click", () => {
   modal.style.display = "none";
