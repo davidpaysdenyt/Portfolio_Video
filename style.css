@@ -21,6 +21,24 @@ body {
     font-size: clamp(10px, 6vw, 20px);
 }
 
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: white;
+    color: black;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
