@@ -8,12 +8,17 @@ const projects = [
   {
     preview: "/my-portfolio/videos/WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/123456789",
+    order: 1
   },
   {
     preview: "/my-portfolio/videos/WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
+    order: 2
   }
 ];
+
+// 👇 SORT HERE from smaller to bigger
+projects.sort((a, b) => a.order - b.order);
 
 // build the grid
 projects.forEach(project => {
