@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: white; /* or your background color */
+  background: black; /* or your background color */
   
   opacity: 0;
   pointer-events: none;
