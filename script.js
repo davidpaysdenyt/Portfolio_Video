@@ -13,7 +13,7 @@ const projects = [
   {
     preview: "videos/AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
-    order: 2
+    order: 6
   },
   {
     preview: "videos/NEWSEN.mp4",
@@ -33,7 +33,7 @@ const projects = [
   {
     preview: "videos/CORPAUT.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
-    order: 6
+    order: 2
   },
   {
     preview: "videos/EPSTADIO.mp4",
