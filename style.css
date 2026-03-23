@@ -34,11 +34,6 @@ body {
     cursor: pointer;
 }
 
-.filters button:hover {
-    background: white;
-    color: black;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
