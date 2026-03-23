@@ -35,10 +35,6 @@ projects.forEach(project => {
   item.appendChild(video);
   grid.appendChild(item);
 
-  // hover
-  item.addEventListener("mouseenter", () => video.play());
-  item.addEventListener("mouseleave", () => video.pause());
-
   // click
   item.addEventListener("click", () => {
     player.src = project.vimeo + "?autoplay=1";
