@@ -58,7 +58,7 @@ body {
   width: 100%;
   max-width: 400px; /* caps size */
   margin: 0 auto 20px;
-  font-size: clamp(20px, 6vw, 60px);
+  font-size: clamp(20px, 6vw, 30px);
   /*border: 3px solid red;*/
 }
 
