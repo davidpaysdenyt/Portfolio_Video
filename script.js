@@ -87,7 +87,7 @@ projects.forEach(project => {
   video.autoplay = true;
   video.playsInline = true;
 
-  video.play();
+  //video.play();
 
   item.appendChild(video);
   grid.appendChild(item);
