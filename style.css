@@ -21,6 +21,18 @@ body {
     font-size: clamp(10px, 6vw, 20px);
 }
 
+.about {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    margin-top: 40px;
+}
+
+.about.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .filters {
     margin-top: 20px;
 }
