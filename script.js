@@ -132,29 +132,44 @@ document.querySelectorAll(".filters button").forEach(button => {
     const filter = button.dataset.filter;
 
     // 👤 ABOUT MODE
-    if (filter === "about") {
-      items.forEach(item => {
-        item.style.opacity = "0";
-        item.style.pointerEvents = "none";
-      });
+if (filter === "about") {
+  items.forEach(item => {
+    item.style.opacity = "0";
+    item.style.pointerEvents = "none";
 
-      aboutSection.classList.add("active");
-      return;
-    }
+    setTimeout(() => {
+      item.style.display = "none";
+    }, 300);
+  });
+
+  aboutSection.classList.add("active");
+  return;
+}
 
     // 🎬 NORMAL FILTER MODE
     aboutSection.classList.remove("active");
 
-    items.forEach(item => {
-      const tags = item.dataset.tags;
+items.forEach(item => {
+  const tags = item.dataset.tags;
 
-      if (filter === "all" || tags.includes(filter)) {
-        item.style.opacity = "1";
-        item.style.pointerEvents = "auto";
-      } else {
-        item.style.opacity = "0";
-        item.style.pointerEvents = "none";
-      }
+  if (filter === "all" || tags.includes(filter)) {
+    item.style.display = "block";
+
+    // small delay so display applies before opacity
+    setTimeout(() => {
+      item.style.opacity = "1";
+      item.style.pointerEvents = "auto";
+    }, 10);
+
+  } else {
+    item.style.opacity = "0";
+    item.style.pointerEvents = "none";
+
+    // after fade out, remove from layout
+    setTimeout(() => {
+      item.style.display = "none";
+    }, 300); // match CSS transition time
+  }
     });
   });
 });
