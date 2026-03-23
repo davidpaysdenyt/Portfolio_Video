@@ -11,11 +11,11 @@ items.forEach(item => {
     // item.addEventListener("mouseleave", () => video.pause());
 const projects = [
   {
-    preview: "videos/preview1.mp4",
+    preview: "WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/123456789",
   },
   {
-    preview: "videos/preview2.mp4",
+    preview: "AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
   }
 ];
