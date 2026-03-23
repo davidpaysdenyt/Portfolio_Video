@@ -41,6 +41,12 @@ body {
     color: black;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
 button:focus {
     outline: none;
 }
