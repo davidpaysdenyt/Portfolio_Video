@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const player = document.getElementById("player");
 const close = document.getElementById("close");
 const grid = document.querySelector(".grid");
+const aboutSection = document.getElementById("aboutSection");
 
 let items = [];
 
@@ -128,19 +129,34 @@ document.querySelectorAll(".filters button").forEach(button => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
 
+    if (filter === "about") {
+      items.forEach(item => {
+        item.style.opacity = "0";
+        item.style.pointerEvents = "none";
+      });
+
+      aboutSection.classList.add("active");
+      return;
+    }
+
     items.forEach(item => {
       if (filter === "all") {
-        item.style.display = "block";
+        item.style.opacity = "1";
+        item.style.pointerEvents = "auto";
       } else {
         const tags = item.dataset.tags;
 
         if (tags.includes(filter)) {
-          item.style.display = "block";
+          item.style.opacity = "1";
+          item.style.pointerEvents = "auto";
         } else {
-          item.style.display = "none";
+          item.style.opacity = "0";
+          item.style.pointerEvents = "none";
         }
       }
     });
+
+    aboutSection.classList.remove("active");
   });
 });
 
