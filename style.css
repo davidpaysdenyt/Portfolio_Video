@@ -41,6 +41,14 @@ body {
     color: black;
 }
 
+button:focus {
+    outline: none;
+}
+
+button:focus-visible {
+    outline: 2px solid white;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
