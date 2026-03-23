@@ -35,7 +35,6 @@ body {
     transition: opacity 0.4s ease;
     margin-top: 80px;
     display: flex;
-    text-align: left;
     justify-content: center; /* centers the whole content block */
 }
 
