@@ -94,7 +94,7 @@ const projects = [
   }
 ];
 
-// 🔥 SORT PROJECTS
+// 🔥 SORT
 projects.sort((a, b) => a.order - b.order);
 
 // 🎬 BUILD GRID
@@ -102,7 +102,6 @@ projects.forEach(project => {
   const item = document.createElement("div");
   item.classList.add("item");
 
-  // store tags
   item.dataset.tags = project.tags.join(" ");
 
   const video = document.createElement("video");
@@ -132,38 +131,24 @@ document.querySelectorAll(".filters button").forEach(button => {
     const filter = button.dataset.filter;
 
     // 👤 ABOUT MODE
-if (filter === "about") {
-  items.forEach(item => {
-    item.classList.add("hidden");
-  });
+    if (filter === "about") {
+      items.forEach(item => item.classList.add("hidden"));
+      aboutSection.classList.add("active");
+      return;
+    }
 
-  aboutSection.classList.add("active");
-  return;
-}
-
-aboutSection.classList.remove("active");
+    // ❌ EXIT ABOUT MODE
+    aboutSection.classList.remove("active");
 
     // 🎬 FILTER ITEMS
-   items.forEach(item => {
-  const tags = item.dataset.tags;
+    items.forEach(item => {
+      const tags = item.dataset.tags;
 
-  if (filter === "all" || tags.includes(filter)) {
-    item.style.display = "block";
-
-    // fade in after being shown
-    setTimeout(() => {
-      item.classList.remove("fade-out");
-    }, 10);
-
-  } else {
-    // fade out first
-    item.classList.add("fade-out");
-
-    // THEN remove from layout
-    setTimeout(() => {
-      item.style.display = "none";
-    }, 300);
-  }
+      if (filter === "all" || tags.includes(filter)) {
+        item.classList.remove("hidden");
+      } else {
+        item.classList.add("hidden");
+      }
     });
   });
 });
