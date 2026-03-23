@@ -35,7 +35,7 @@ body {
 
 .about-img {
   width: 100%;      /* fits container */
-  max-width: 100px; /* caps size */
+  max-width: 50px; /* caps size */
   height: auto;     /* preserves aspect ratio */
   display: block;
   margin: 0 auto 20px;
