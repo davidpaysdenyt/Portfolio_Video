@@ -111,6 +111,26 @@ projects.forEach(project => {
   });
 });
 
+document.querySelectorAll(".filters button").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    items.forEach(item => {
+      if (filter === "all") {
+        item.style.display = "block";
+      } else {
+        const tags = item.dataset.tags;
+
+        if (tags.includes(filter)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      }
+    });
+  });
+});
+
 // close modal
 close.addEventListener("click", () => {
   modal.style.display = "none";
