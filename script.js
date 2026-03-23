@@ -6,12 +6,12 @@ const grid = document.querySelector(".grid");
 // your data
 const projects = [
   {
-    preview: "/my-portfolio/videos/WORKPREV.mp4",
+    preview: "videos/WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/123456789",
     order: 2
   },
   {
-    preview: "/my-portfolio/videos/AFTERTYLERPREV.mp4",
+    preview: "videos/AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     order: 1
   }
