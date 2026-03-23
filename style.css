@@ -26,13 +26,14 @@ body {
 }
 
 .filters button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
     background: none;
     color: white;
     /*border: 1px solid white;*/
     padding: 8px 12px;
     margin: 5px;
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
 }
 
 .filters button:hover {
