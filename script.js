@@ -3,6 +3,8 @@ const player = document.getElementById("player");
 const close = document.getElementById("close");
 const grid = document.querySelector(".grid");
 
+let items = [];
+
 // your data
 const projects = [
   {
@@ -86,6 +88,8 @@ projects.forEach(project => {
   const item = document.createElement("div");
   item.classList.add("item");
 
+  item.dataset.tags = project.tags.join(" "); // 👈 store tags
+
   const video = document.createElement("video");
   video.src = project.preview;
   video.muted = true;
@@ -97,6 +101,8 @@ projects.forEach(project => {
 
   item.appendChild(video);
   grid.appendChild(item);
+
+  items.push(item); // 👈 store reference
 
   // click → open Vimeo
   item.addEventListener("click", () => {
