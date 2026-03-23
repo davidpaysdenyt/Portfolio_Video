@@ -57,6 +57,7 @@ button {
     border: none;
     outline: none;
     background: none;
+    font-size: clamp(10px, 6vw, 20px);
 }
 
 button:focus {
