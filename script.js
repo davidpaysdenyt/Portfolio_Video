@@ -4,7 +4,7 @@ const player = document.getElementById("player");
 const close = document.getElementById("close");
 
 items.forEach(item => {
-    const video = item.querySelector("video");
+    const video = item.querySelector("videos");
 
     // hover = play preview
     // item.addEventListener("mouseenter", () => video.play());
