@@ -52,6 +52,10 @@ body {
   border-radius: 8px;
 }
 
+.about-content {
+  text-align: left;
+}
+
 #aboutSection {
   display: none; /* 👈 KEY */
   opacity: 0;
