@@ -8,7 +8,7 @@ const projects = [
   {
     preview: "videos/WORKPREV.mp4",
     vimeo: "https://player.vimeo.com/video/123456789",
-    tag: "music-video",
+    tags: "music-video",
     order: 1
   },
   {
