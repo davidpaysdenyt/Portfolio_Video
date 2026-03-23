@@ -10,7 +10,7 @@ let items = [];
 const projects = [
   {
     preview: "videos/WORKPREV.mp4",
-    vimeo: "https://player.vimeo.com/video/123456789",
+    vimeo: "https://www.youtube.com/embed/S3b_-2h4nk4?si=z9Kic34MZ2t2k09G",
     tags: ["Music-video"],
     order: 1
   },
