@@ -9,7 +9,17 @@ items.forEach(item => {
     // hover = play preview
     // item.addEventListener("mouseenter", () => video.play());
     // item.addEventListener("mouseleave", () => video.pause());
-
+const projects = [
+  {
+    preview: "videos/preview1.mp4",
+    vimeo: "https://player.vimeo.com/video/123456789",
+  },
+  {
+    preview: "videos/preview2.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+  }
+];
+    
     // click = open Vimeo
     item.addEventListener("click", () => {
         const vimeoURL = item.getAttribute("data-video");
