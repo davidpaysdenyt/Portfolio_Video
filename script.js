@@ -132,14 +132,16 @@ document.querySelectorAll(".filters button").forEach(button => {
     const filter = button.dataset.filter;
 
     // 👤 ABOUT MODE
-    if (filter === "about") {
-      items.forEach(item => item.classList.add("hidden"));
-      aboutSection.classList.add("active");
-      return;
-    }
+if (filter === "about") {
+  items.forEach(item => {
+    item.classList.add("hidden");
+  });
 
-    // 🔥 EXIT ABOUT MODE
-    aboutSection.classList.remove("active");
+  aboutSection.classList.add("active");
+  return;
+}
+
+aboutSection.classList.remove("active");
 
     // 🎬 FILTER ITEMS
    items.forEach(item => {
