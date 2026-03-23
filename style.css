@@ -75,9 +75,9 @@ button:focus-visible {
     margin-top: 40px;
 }
 
-/*.item {
+.item {
     transition: opacity 0.3s ease;
-}*/
+}
 
 .item video {
     width: 100%;
