@@ -49,8 +49,8 @@ body {
 }
 
 .about-img {
-  width: 25%;      /* fits container */
-  max-width: 400px; /* caps size */
+  width: 100%;      /* fits container */
+  max-width: 100px; /* caps size */
   height: auto;     /* preserves aspect ratio */
   display: block;
   margin: 0 auto 20px;
