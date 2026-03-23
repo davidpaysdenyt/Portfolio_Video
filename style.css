@@ -55,7 +55,8 @@ body {
 .about-content {
   text-align: left;
   margin-top: 60px;
-  width: 20%;
+  width: 100%;
+  border: 3px solid red;
 }
 
 #aboutSection {
