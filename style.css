@@ -66,10 +66,6 @@ body {
 #aboutSection.active {
   display: block; /* or flex if needed */
   opacity: 1;
-}
-
-#aboutSection.active {
-  opacity: 1;
   pointer-events: auto;
 }
 
