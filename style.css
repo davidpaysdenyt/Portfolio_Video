@@ -21,6 +21,14 @@ body {
     font-size: clamp(10px, 6vw, 20px);
 }
 
+.title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 60px);
+}
+
 .about {
     opacity: 0;
     pointer-events: none;
