@@ -49,6 +49,26 @@ const projects = [
     preview: "videos/VILLAIGEA.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     order: 9
+  },
+  {
+    preview: "videos/INTERLUDE.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 10
+  },
+  {
+    preview: "videos/FVBARCA.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 11
+  },
+  {
+    preview: "videos/SERAFINO.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 12
+  },
+  {
+    preview: "videos/THALASSO.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 13
   }
 ];
 
