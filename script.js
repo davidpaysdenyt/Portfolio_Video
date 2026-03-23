@@ -69,6 +69,11 @@ const projects = [
     preview: "videos/THALASSO.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     order: 13
+  },
+  {
+    preview: "videos/PARMA.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 14
   }
 ];
 
