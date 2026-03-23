@@ -14,6 +14,41 @@ const projects = [
     preview: "videos/AFTERTYLERPREV.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     order: 2
+  },
+  {
+    preview: "videos/NEWSEN.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 3
+  },
+  {
+    preview: "videos/VOLMAG.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 4
+  },
+  {
+    preview: "videos/OLSEN.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 5
+  },
+  {
+    preview: "videos/CORPAUT.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 6
+  },
+  {
+    preview: "videos/EPSTADIO.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 7
+  },
+  {
+    preview: "videos/QSA.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 8
+  },
+  {
+    preview: "videos/VILLAIGEA.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    order: 9
   }
 ];
 
