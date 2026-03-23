@@ -54,6 +54,7 @@ body {
     cursor: pointer;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    transition: opacity 0.3s ease;
     /*border: 2px solid red;*/
 }
 
