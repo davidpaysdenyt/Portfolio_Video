@@ -159,10 +159,10 @@ const projects = [
     order: 25
   },
   {
-    preview: "videos/avant.mp4",
-    vimeo: "https://player.vimeo.com/video/1177279484",
-    tags: ["motion"],
-    order: 25
+    preview: "videos/erre.mp4",
+    vimeo: "https://player.vimeo.com/video/1177278574",
+    tags: ["Corporate"],
+    order: 26
   }
 ];
 
