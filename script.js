@@ -16,7 +16,7 @@ const projects = [
   },
   {
     preview: "videos/AFTERTYLERPREV.mp4",
-    vimeo: "https://www.youtube.com/embed/dNjrgmiblsg?si=WNT1djoL2zeWPyom",
+    vimeo: "https://player.vimeo.com/video/1177336947",
     tags: ["Music-video"],
     order: 16
   },
