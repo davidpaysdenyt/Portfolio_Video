@@ -93,28 +93,70 @@ const projects = [
     order: 14
   },
   {
-    preview: "videos/PARMA.mp4",
+    preview: "videos/aea.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     tags: ["Sport"],
     order: 15
   },
   {
-    preview: "videos/PARMA.mp4",
+    preview: "videos/moretti.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     tags: ["Sport"],
     order: 16
   },
   {
-    preview: "videos/PARMA.mp4",
+    preview: "videos/des.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     tags: ["Sport"],
     order: 17
   },
   {
-    preview: "videos/PARMA.mp4",
+    preview: "videos/bike.mp4",
     vimeo: "https://player.vimeo.com/video/987654321",
     tags: ["Sport"],
     order: 18
+  },
+  {
+    preview: "videos/atb.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 19
+  },
+  {
+    preview: "videos/chloe.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 20
+  },
+  {
+    preview: "videos/golden.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 21
+  },
+  {
+    preview: "videos/road.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 22
+  },
+  {
+    preview: "videos/estetica.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 23
+  },
+  {
+    preview: "videos/hydro.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 24
+  },
+  {
+    preview: "videos/avant.mp4",
+    vimeo: "https://player.vimeo.com/video/987654321",
+    tags: ["Sport"],
+    order: 25
   }
 ];
 
