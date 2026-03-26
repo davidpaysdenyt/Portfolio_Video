@@ -98,7 +98,7 @@ button {
     border: none;
     outline: none;
     background: none;
-    font-size: clamp(5px, 6vw, 13px);
+    font-size: clamp(3px, 6vw, 13px);
 }
 
 button:focus {
