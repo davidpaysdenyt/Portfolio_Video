@@ -18,7 +18,7 @@ const projects = [
     preview: "videos/AFTERTYLERPREV.mp4",
     vimeo: "https://www.youtube.com/embed/dNjrgmiblsg?si=WNT1djoL2zeWPyom",
     tags: ["Music-video"],
-    order: 6
+    order: 16
   },
   {
     preview: "videos/NEWSEN.mp4",
@@ -102,7 +102,7 @@ const projects = [
     preview: "videos/moretti.mp4",
     vimeo: "https://player.vimeo.com/video/1177277237",
     tags: ["Luxury"],
-    order: 16
+    order: 6
   },
   {
     preview: "videos/des.mp4",
