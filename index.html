@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h1 class="title">DAVID PAYSDEN</h1>
+
+    <h2 class="header">Video Editor & Colorist - Motion Designer</h2>
+
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button class="desktop-only" data-filter="Sport">Sport</button>
+        <button class="desktop-only" data-filter="Music-video">Music-video</button>
+        <button class="desktop-only" data-filter="Documentary">Documentary</button>
+        <button class="desktop-only" data-filter="Corporate">Corporate</button>
+        <button class="desktop-only" data-filter="Luxury">Luxury & Fashion</button>
+        <button class="desktop-only" data-filter="motion">Motion Design</button>
+        <button data-filter="about">About</button>
+    </div>
+
+    <div class="about" id="aboutSection">
+        <img src="images/DavidP2.jpg" alt="Me" class="about-img">
+        <div class="about-content">
+            <p>
+                Great stories deserve good company,<br />
+                and great companies deserve good stories.<br />
+                Together we'll bring your vision to life <br />
+                with care and creativity.<br />
+                <br />
+                <span class="email">davidpaysdenyt@gmail.com</span>
+
+            </p>
+        </div>
+    </div>
+
+   <div class="grid"></div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <iframe id="player"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
